@@ -553,6 +553,11 @@ function shuffle(a) {
         background-color: silver !important;
     }
 
+    img.related_article_photo {
+        --aspect-ratio: 16/9;
+        padding-bottom: calc(100%/(var(--aspect-ratio))) !important;
+    }
+
     .related_images img,
     #gazeta_article_body p img,
     iframe.onnetworkframe {
