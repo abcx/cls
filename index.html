@@ -546,7 +546,9 @@ function shuffle(a) {
 <style>
     .related_images,
     div.onnetworkplayercontainer,
-    #gazeta_article_body .imageUOM {
+    #gazeta_article_body .imageUOM,
+    div#adUnit-104-RECTANGLE-MOBI.activeBan,
+    div#banC1.activeBan {
         --aspect-ratio: 16/9;
         position: relative !important;
         height: 0 !important;
@@ -561,7 +563,9 @@ function shuffle(a) {
 
     .related_images img,
     #gazeta_article_body p img,
-    iframe.onnetworkframe {
+    iframe.onnetworkframe,
+    div#adUnit-104-RECTANGLE-MOBI.activeBan iframe,
+    div#banC1.activeBan iframe {
         position: absolute !important;
         top: 0 !important;
         left: 0 !important;
@@ -570,29 +574,9 @@ function shuffle(a) {
         object-fit: cover;
     }
 
-    div#adUnit-104-RECTANGLE-MOBI.activeBan {
-        --aspect-ratio: 100% / attr(height);
-        background-color: silver !important;
-        position: relative;
-    }
-
-    div#banC1.activeBan {
-        /* min-height: 661px; */
-        --aspect-ratio: 100% / attr(height);
-        background-color: silver !important;
-        position: relative;
-    }
-
     div#adUnit-104-RECTANGLE-MOBI.activeBan iframe,
     div#banC1.activeBan iframe {
-        position: absolute !important;
-        top: 0 !important;
-        right: 0 !important;
-        bottom: 0 !important;
-        left: 0 !important;
-        margin: auto;
-        width: 100% !important;
-        height: 100% !important;
+        --aspect-ratio: 100% / attr(height);
     }
 </style>
 <!--410356799, position: ban.init, name: ban.init, MeasurableViewWrapper : PortalModuleView : DefaultModuleView : InheritingModuleInternalResourceView : /tpl/ads/prod/dfpHeader-2.0.jsp : /tpl/ads/prod/dfpHeader-2.0.jsp, dfpBanersHeaderBeanV2-->
