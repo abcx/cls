@@ -114,7 +114,7 @@
             newPar.classList.add('img-container');
             newPar.appendChild(img);
 
-            paragraphs[nr].insertBefore(newPar, paragraphs[nr].firstChild);
+            paragraphs[nr].parentNode.insertBefore(newPar, paragraphs[nr]);
 
             console.log('Image has been added.');
         }, 1000);
