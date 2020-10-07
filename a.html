@@ -11,13 +11,13 @@
         /* body {
             font-family: 'Roboto', sans-serif;
         } */
-        p.img-container {
+        /* p.img-container {
             --aspect-ratio: 3/2;
             position: relative;
             height: 0;
             padding-bottom: calc(100%/(var(--aspect-ratio)));
             background-color: silver;
-        }
+        } */
         /* p.img-container img {
             position: absolute;
             top: 0;
@@ -30,6 +30,7 @@
         p.img-container img {
             width: 100%;
             height: auto;
+            --aspect-ratio: attr(width) / attr(height);
         }
 
         .video-container {
@@ -57,7 +58,7 @@
 </p> -->
 
 <p class="img-container">
-    <img id="img1" src="img/bieszczady-02.jpg">
+    <img src="img/bieszczady-02.jpg" width="1024" height="682">
 </p>
 
 <p>Pariatur irure occaecat cillum sint nulla laboris quis est consequat consectetur enim magna ipsum. Officia nisi aliquip laboris proident in dolor officia cupidatat aliquip. Laboris labore consequat dolor proident nostrud aliquip qui mollit occaecat duis deserunt. Enim quis consequat est eu adipisicing amet nostrud do.</p>
@@ -80,7 +81,7 @@
 </p>
 
 <p class="img-container">
-    <img id="img2" src="img/bieszczady-02-vertical.jpg">
+    <img src="img/bieszczady-02-vertical.jpg" width="523" height="680">
 </p>
 
 <p>Occaecat pariatur pariatur veniam do sit occaecat aliqua. Aliqua velit tempor ea nisi. Esse excepteur tempor minim irure aute cillum commodo cillum exercitation magna Lorem.</p>
