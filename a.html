@@ -11,13 +11,13 @@
         /* body {
             font-family: 'Roboto', sans-serif;
         } */
-        p.img-container {
+        /* p.img-container {
             --aspect-ratio: 3/2;
             position: relative;
             height: 0;
             padding-bottom: calc(100%/(var(--aspect-ratio)));
             background-color: silver;
-        }
+        } */
         /* p.img-container img {
             position: absolute;
             top: 0;
@@ -105,13 +105,16 @@
         setTimeout(_ => {
 
             const paragraphs = document.querySelectorAll('p:not(.img-container)');
-            const nr = 6;
+            const nr = 5;
 
             let img = document.createElement('img');
             img.src = 'img/zubry.jpg';
+            
+            let newPar = document.createElement('p');
+            newPar.classList.add('img-container');
+            newPar.appendChild(img);
 
-            paragraphs[nr].classList.add('img-container');
-            paragraphs[nr].insertBefore(img, paragraphs[nr].childNodes[0]);
+            paragraphs[nr].insertBefore(newPar, paragraphs[nr].firstChild);
 
             console.log('Image has been added.');
         }, 1000);
