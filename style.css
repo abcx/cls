@@ -2,7 +2,7 @@ html {
     overflow-x: hidden;
 }
 
-div.adviewDFPBanner.activeBan,
+/* div.adviewDFPBanner.activeBan, */
 div.onnetworkplayercontainer,
 #gazeta_article_body .imageUOM {
     background-color: silver !important;
@@ -10,13 +10,18 @@ div.onnetworkplayercontainer,
 
 .related_image_wrap,
 div.onnetworkplayercontainer,
-#gazeta_article_body .imageUOM,
-div#adUnit-101-TOPBOARD-MOBI,
+#gazeta_article_body .imageUOM {
+/* div#adUnit-101-TOPBOARD-MOBI,
 div#adUnit-104-RECTANGLE-MOBI.activeBan,
-div#banC1.activeBan {
+div#banC1.activeBan { */
     --aspect-ratio: 3/2; /* ads have multiple different aspects :( */
     /* position: relative !important; */
     height: 0 !important;
+    padding-bottom: calc(100%/(var(--aspect-ratio))) !important;
+}
+
+#gazeta_article_body div.art_embed iframe {
+    /* --aspect-ratio: 100% / attr(height); */
     padding-bottom: calc(100%/(var(--aspect-ratio))) !important;
 }
 
@@ -36,7 +41,7 @@ iframe.onnetworkframe {
     object-fit: cover;
 } */
 
-div#adUnit-101-TOPBOARD-MOBI iframe,
+/* div#adUnit-101-TOPBOARD-MOBI iframe,
 div#adUnit-104-RECTANGLE-MOBI.activeBan iframe,
 div#banC1.activeBan iframe {
     --aspect-ratio: 100% / attr(height);
@@ -46,4 +51,4 @@ div#banC1.activeBan iframe {
     /* width: 100% !important; */
     /* height: 100% !important; */
     /* object-fit: cover; */
-}
+} */
