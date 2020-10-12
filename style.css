@@ -2,14 +2,14 @@ html {
     overflow-x: hidden;
 }
 
-/* div.adviewDFPBanner.activeBan, */
-div.onnetworkplayercontainer,
+/* div.adviewDFPBanner.activeBan, 
+div.onnetworkplayercontainer,*/
 #gazeta_article_body .imageUOM {
     background-color: silver !important;
 }
 
 .related_image_wrap,
-div.onnetworkplayercontainer,
+/* div.onnetworkplayercontainer, */
 #gazeta_article_body .imageUOM {
 /* div#adUnit-101-TOPBOARD-MOBI,
 div#adUnit-104-RECTANGLE-MOBI.activeBan,
@@ -20,9 +20,10 @@ div#banC1.activeBan { */
     padding-bottom: calc(100%/(var(--aspect-ratio))) !important;
 }
 
-#gazeta_article_body div.art_embed iframe {
-    /* --aspect-ratio: 100% / attr(height); */
+#gazeta_article_body div[id^=onn-cid] {
     padding-bottom: calc(100%/(var(--aspect-ratio))) !important;
+    --aspect-ratio: 66/37;
+    height: 0 !important;
 }
 
 img.related_article_photo,
@@ -50,5 +51,5 @@ div#banC1.activeBan iframe {
     /* left: 0 !important; */
     /* width: 100% !important; */
     /* height: 100% !important; */
-    /* object-fit: cover; */
-} */
+    /* object-fit: cover; 
+}*/
