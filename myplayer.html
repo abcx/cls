@@ -1,15 +1,17 @@
 <script async src="https://cdn.ampproject.org/video-iframe-integration-v0.js"></script>
 
 <div id="onn-cid-369878"></div>
-<script id="onn-video" async="" type="text/javascript" src=""></script> 
+<script id="onn-video" async="" type="text/javascript" src="https://video.onnetwork.tv/embed.php?sid=MTZWLE9zZiww&amp;cId=onn-cid-369878"></script> 
 
 <!-- Wait for API to initialize -->
 <script>
     (window.AmpVideoIframe = window.AmpVideoIframe || [])
         .push(function(ampIntegration) {
             
-            var s = document.querySelector('#onn-video');
-            s.src = 'https://video.onnetwork.tv/embed.php?sid=MTZWLE9zZiww&amp;cId=onn-cid-369878';
+            // var s = document.querySelector('#onn-video');
+            // var s = document.createElement('script');
+            // s.async = true;
+            // s.src = 'https://video.onnetwork.tv/embed.php?sid=MTZWLE9zZiww&amp;cId=onn-cid-369878';
 
             window.ONTVsendCommand('playpause', Date.now());
 
