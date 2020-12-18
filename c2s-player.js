@@ -3,6 +3,7 @@ var gazeta_pl = gazeta_pl || {};
 gazeta_pl.content2speech = {
 
     $range: document.querySelector('#c2s-range'),
+    $rangeValue: document.querySelector('#c2s-range-value'),
 
     init() {
 
@@ -12,7 +13,8 @@ gazeta_pl.content2speech = {
 
             this.$range.addEventListener('change', e => {
 
-                console.log(e.target.value)
+                $rangeValue.value = e.target.value;
+                console.log($rangeValue)
             });
         }
     }
