@@ -13,8 +13,8 @@ gazeta_pl.content2speech = {
 
             this.$range.addEventListener('change', e => {
 
-                $rangeValue.value = e.target.value;
-                console.log($rangeValue)
+                this.$rangeValue.value = e.target.value;
+                console.log(this.$rangeValue)
             });
         }
     }
